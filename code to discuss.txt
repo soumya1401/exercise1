@@ -1,0 +1,31 @@
+
+
+list1 =input("Enter numbers with ,")
+list1 = list(list1)
+print(list1)
+max =list1[0]
+list2=[]
+for i in range(len(list1)):
+    if list1[i]>max:
+        max =list1[i]
+        list1.remove(list1[i])
+        list2.append(max)
+print(list2)
+
+
+list1 =input("Enter numbers with ,")
+list1 = list(list1)
+print(list1)
+max1 =list1[0]
+list2=[]
+
+
+for i in range(len(list1)):
+    if list1[i]>max1:
+        max1 =list1[i]
+        list2.append(max1)
+        list1.remove(list1[i])
+        i=0
+
+print(list2)
+print(max1)
